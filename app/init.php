@@ -5,7 +5,7 @@
  
 //read from databases
     try{
-    $dsn = "mysql:host=120.24.233.54;dbname=chinesemedical";
+    $dsn = "mysql:host=120.24.233.54;dbname=lhm_chinese_med";
     $db = new PDO($dsn, 'danny', 'Ud0891802183');
     $db->query('set names utf8;');
     }catch(Exception $e){

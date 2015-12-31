@@ -3,11 +3,12 @@ require_once 'init.php';
 
 
 
-$rs = $db->query("SELECT * FROM system ");
-    $system = $rs->fetchAll();
+$rs = $db->query("SELECT * FROM illness ");
+    $illnesses = $rs->fetchAll();
 
-          echo  "".$system[0][$current_lang.'_name'];
-
+foreach($illnesses as $ill)          
+echo  $ill[$current_lang.'_title'];
+/*i am branch!!*/
 ?>
 
 
